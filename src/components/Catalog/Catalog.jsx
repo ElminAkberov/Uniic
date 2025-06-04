@@ -45,7 +45,7 @@ const Catalog = () => {
           </div>
         ))}
       </div>
-      <div className="flex justify-center gap-x-[14px] my-10 items-center ">
+      <div className="flex justify-center gap-x-[14px] my-10 items-center md:hidden">
         <img src={android} alt="" />
         <img src={ios} alt="" />
       </div>
