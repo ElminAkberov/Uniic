@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import android from "../../assets/Android Download Button.svg";
 import ios from "../../assets/Apple Download Button.svg";
-import mask1 from "../../assets/mask1.svg";
-import mask2 from "../../assets/mask2.svg";
-import mask3 from "../../assets/mask3.svg";
-import mask4 from "../../assets/mask4.svg";
+import mask1 from "../../assets/mask1.png";
+import mask2 from "../../assets/mask2.png";
+import mask3 from "../../assets/mask3.png";
+import mask4 from "../../assets/mask4.png";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
