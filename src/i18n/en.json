@@ -1,0 +1,91 @@
+{
+  "getStarted": "Get Started",
+  "betterConnections": "Better\nconnections",
+  "findingPerson": "Finding the right person is harder than finding a good oat milk cappuccino in 2012.",
+  "sucksText": "Dating apps suck. Networking is awkward. Making new friends as an adult is basically illegal. Travel buddies either ruin your trip or disappear when the bill comes. Business partners? Might as well be a toxic ex with equity.",
+  "thereIsWay": "There has to be a better way. There is. It’s",
+  "testUnique": "Test How Unique You Are",
+  "problemHeading": "The Problem With\nToday’s Connections",
+  "problemSub": "Most apps aren’t actually helping.",
+  "features": [
+    {
+      "title": "Dating apps?",
+      "description": "Swipe. Match. Ghost. Repeat."
+    },
+    {
+      "title": "Networking?",
+      "description": "LinkedIn DMs from people trying to sell you crypto."
+    },
+    {
+      "title": "Friendships?",
+      "description": "Texting “we should totally catch up soon” for the third year in a row."
+    },
+    {
+      "title": "Travel partners?",
+      "description": "You said “relaxed trip.” They made a color-coded itinerary."
+    },
+    {
+      "title": "Business partners?",
+      "description": "Might as well be a toxic ex with equity."
+    }
+  ],
+  "rightPeople": "You don’t need more people in your contacts. You need <bold>the right people</bold> in your life.",
+  "info": {
+    "heading": "What Is Uniic?",
+    "paragraphs": [
+      "Uniic is <bold>not</bold> another dating app, networking site, or “exclusive community” that just sells you a membership.",
+      "It’s the <bold>first platform that actually finds people you’re compatible with</bold> — across dating, friendship, travel, sports, and business.",
+      "Using <bold>psychometric testing</bold>, Uniic finds the right people for you based on:"
+    ],
+    "categories": [
+      {
+        "title": "Dating",
+        "desc": "So your next relationship doesn’t feel like an ongoing attachment experiment"
+      },
+      {
+        "title": "Friendship",
+        "desc": "Because finding real friends after 30 shouldn’t require a personal assistant"
+      },
+      {
+        "title": "Travel",
+        "desc": "No more mismatched travel styles and passive-aggressive itinerary fights"
+      },
+      {
+        "title": "Sports",
+        "desc": "Actually find a gym buddy who doesn’t flake after two sessions"
+      },
+      {
+        "title": "Business",
+        "desc": "A co-founder or collaborator who doesn’t disappear when things get hard"
+      }
+    ],
+    "buttonText": "Get Matched Well"
+  },
+  "title": "How It Works?",
+  "steps": [
+    {
+      "step": "Step 1",
+      "header": "Test Your\nCompatibility",
+      "desc": "Answer a few questions. We analyze your dating life, friendships, and potential as a business partner."
+    },
+    {
+      "step": "Step 2",
+      "header": "Get\nMatched",
+      "desc": "Find people who won’t make you wish you’d canceled."
+    },
+    {
+      "step": "Step 3",
+      "header": "Meet\nYour People",
+      "desc": "Because life is too short for bad relationships, dead-end friendships, and unreliable gym partners."
+    }
+  ],
+  "footerText": "Stop Swiping. <bold>Connect.</bold>",
+  "buttonText": "Get Matched Well",
+  "questionBold": "Question?",
+  "question": "Talk to us",
+  "emailPlaceholder": "Insert your Email",
+  "messagePlaceholder": "Insert your message here",
+  "sendButton": "Send",
+  "privacyPolicy": "Privacy Policy",
+  "privacyPolicyBr": "Privacy <br /> Policy"
+}

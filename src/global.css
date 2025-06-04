@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@font-face {
+  font-family: "Sofia Pro Regular";
+  src: url("../src/fonts/Sofia Pro Regular Az.woff") format("woff");
+}
+@font-face {
+  font-family: "Sofia Pro ExtraLight";
+  src: url("../src/fonts/Sofia Pro ExtraLight Az.woff") format("woff");
+}
+@font-face {
+  font-family: "Sofia Pro Light";
+  src: url("../src/fonts/Sofia Pro Light Az.woff") format("woff");
+}
+@font-face {
+  font-family: "Sofia Pro Bold";
+  src: url("../src/fonts/Sofia Pro Bold Az.woff") format("woff");
+}
+.sofia-pro {
+  font-family: "Sofia Pro Regular";
+}
+.sofia-extralight {
+  font-family: "Sofia Pro ExtraLight";
+}
+.sofia-light {
+  font-family: "Sofia Pro Light";
+}
+.sofia-bold {
+  font-family: "Sofia Pro Bold";
+}
+.header {
+  @apply pl-7 md:!px-[50px] pr-[13px] pt-[15px] pb-[17px];
+  @apply md:bg-black max-md:bg-white;
+}
+textarea {
+  resize: none;
+}

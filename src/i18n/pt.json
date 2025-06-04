@@ -1,0 +1,91 @@
+{
+  "getStarted": "Começar",
+  "betterConnections": "Melhores\nconexões",
+  "findingPerson": "Encontrar a pessoa certa é mais difícil do que encontrar um bom cappuccino de leite de aveia em 2012.",
+  "sucksText": "Aplicativos de namoro são ruins. Fazer networking é constrangedor. Fazer novos amigos como adulto é praticamente ilegal. Companheiros de viagem estragam a viagem ou somem na hora da conta. Sócios? Como um ex tóxico com ações.",
+  "thereIsWay": "Tem que haver uma maneira melhor. Existe. É o",
+  "testUnique": "Teste quão único você é",
+  "problemHeading": "O Problema Com\nAs Conexões de Hoje",
+  "problemSub": "A maioria dos apps não está realmente ajudando.",
+  "features": [
+    {
+      "title": "Apps de namoro?",
+      "description": "Deslize. Combine. Fantasma. Repita."
+    },
+    {
+      "title": "Networking?",
+      "description": "Mensagens no LinkedIn de pessoas tentando vender criptomoedas."
+    },
+    {
+      "title": "Amizades?",
+      "description": "Mandar mensagem dizendo “temos que nos encontrar” pelo terceiro ano seguido."
+    },
+    {
+      "title": "Parceiros de viagem?",
+      "description": "Você disse “viagem relaxante.” Eles fizeram um roteiro codificado por cores."
+    },
+    {
+      "title": "Sócios de negócios?",
+      "description": "Podem muito bem ser um ex tóxico com participação."
+    }
+  ],
+  "rightPeople": "Você não precisa de mais pessoas nos seus contatos. Você precisa <bold>das pessoas certas</bold> na sua vida.",
+  "info": {
+    "heading": "O que é Uniic?",
+    "paragraphs": [
+      "Uniic <bold>não</bold> é outro aplicativo de namoro, site de networking, ou “comunidade exclusiva” que só vende uma assinatura.",
+      "É a <bold>primeira plataforma que realmente encontra pessoas compatíveis com você</bold> — em namoro, amizade, viagens, esportes e negócios.",
+      "Usando <bold>testes psicométricos</bold>, Uniic encontra as pessoas certas para você baseado em:"
+    ],
+    "categories": [
+      {
+        "title": "Namoro",
+        "desc": "Para que seu próximo relacionamento não pareça um experimento de apego contínuo"
+      },
+      {
+        "title": "Amizade",
+        "desc": "Porque encontrar amigos verdadeiros depois dos 30 não deve exigir um assistente pessoal"
+      },
+      {
+        "title": "Viagens",
+        "desc": "Chega de estilos de viagem incompatíveis e brigas passivo-agressivas sobre roteiros"
+      },
+      {
+        "title": "Esportes",
+        "desc": "Encontre um parceiro de academia que não falte depois de duas sessões"
+      },
+      {
+        "title": "Negócios",
+        "desc": "Um cofundador ou colaborador que não desaparece quando as coisas ficam difíceis"
+      }
+    ],
+    "buttonText": "Encontre as pessoas certas"
+  },
+  "title": "Como Funciona?",
+  "steps": [
+    {
+      "step": "Passo 1",
+      "header": "Teste Sua\nCompatibilidade",
+      "desc": "Responda a algumas perguntas. Analisamos sua vida amorosa, amizades e potencial como parceiro de negócios."
+    },
+    {
+      "step": "Passo 2",
+      "header": "Combine-se",
+      "desc": "Encontre pessoas que não farão você desejar ter cancelado."
+    },
+    {
+      "step": "Passo 3",
+      "header": "Conheça\nSeu Povo",
+      "desc": "Porque a vida é curta demais para relacionamentos ruins, amizades sem futuro e parceiros de academia não confiáveis."
+    }
+  ],
+  "footerText": "Pare de deslizar. <bold>Conecte-se.</bold>",
+  "buttonText": "Combine Bem",
+  "questionBold": "Pergunta?",
+  "question": "Fale conosco",
+  "emailPlaceholder": "Insira seu e-mail",
+  "messagePlaceholder": "Insira sua mensagem aqui",
+  "sendButton": "Enviar",
+  "privacyPolicy": "Política de privacidade",
+  "privacyPolicyBr": "Política de <br/> privacidade"
+}
