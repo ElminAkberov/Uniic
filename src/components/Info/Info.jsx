@@ -4,6 +4,7 @@ import uniic from "../../assets/uniic.svg";
 import Button from "../Button/Button";
 import android from "../../assets/Android Download Button.svg";
 import ios from "../../assets/Apple Download Button.svg";
+import { handleRedirect } from "../../utils/appRedirect";
 
 const Info = () => {
   const { t } = useTranslation();
@@ -72,8 +73,18 @@ const Info = () => {
         </div>
       </div>
       <div className="flex justify-center gap-x-[14px] py-20 items-center max-md:hidden">
-        <img src={android} alt="android" />
-        <img src={ios} alt="ios" />
+        <img
+          onClick={() => handleRedirect("android")}
+          src={android}
+          alt="android"
+          className="cursor-pointer"
+        />
+        <img
+          onClick={() => handleRedirect("ios")}
+          src={ios}
+          alt="ios"
+          className="cursor-pointer"
+        />
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ import mask3 from "../../assets/mask3.png";
 import mask4 from "../../assets/mask4.png";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
+import { handleRedirect } from "../../utils/appRedirect";
 
 const Catalog = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -46,8 +47,18 @@ const Catalog = () => {
         ))}
       </div>
       <div className="flex justify-center gap-x-[14px] my-10 items-center md:hidden">
-        <img src={android} alt="" />
-        <img src={ios} alt="" />
+        <img
+          onClick={() => handleRedirect("android")}
+          src={android}
+          className="cursor-pointer"
+          alt=""
+        />
+        <img
+          onClick={() => handleRedirect("ios")}
+          src={ios}
+          className="cursor-pointer"
+          alt=""
+        />
       </div>
     </>
   );

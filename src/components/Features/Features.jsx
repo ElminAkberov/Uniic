@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation, Trans } from "react-i18next";
 import android from "../../assets/Android Download Button.svg";
 import ios from "../../assets/Apple Download Button.svg";
+import { handleRedirect } from "../../utils/appRedirect";
 
 const Features = () => {
   const { t } = useTranslation();
@@ -19,8 +20,18 @@ const Features = () => {
             {t("problemSub")}
           </p>
           <div className="flex gap-x-[14px] items-center">
-            <img src={android} alt="android" />
-            <img src={ios} alt="ios" />
+            <img
+              onClick={() => handleRedirect("android")}
+              src={android}
+              className="cursor-pointer"
+              alt="android"
+            />
+            <img
+              onClick={() => handleRedirect("ios")}
+              src={ios}
+              alt="ios"
+              className="cursor-pointer"
+            />
           </div>
         </div>
 

@@ -5,6 +5,7 @@ import ios from "../../assets/Apple Download Button.svg";
 import main from "../../assets/main_img_max-md.svg";
 import main_md from "../../assets/main-md.svg";
 import { useTranslation } from "react-i18next";
+import { handleRedirect } from "../../utils/appRedirect";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -18,8 +19,18 @@ const Hero = () => {
               {t("betterConnections")}
             </h1>
             <div className="flex gap-x-[14px] pt-4 items-center">
-              <img src={android} alt="" />
-              <img src={ios} alt="" />
+              <img
+                onClick={() => handleRedirect("android")}
+                src={android}
+                alt=""
+                className="cursor-pointer"
+              />
+              <img
+                onClick={() => handleRedirect("ios")}
+                src={ios}
+                alt=""
+                className="cursor-pointer"
+              />
             </div>
           </div>
           <div className="absolute bottom-[-100px] right-0">
@@ -75,9 +86,19 @@ const Hero = () => {
                 className="min-[1200px]:min-w-[660px] h-auto mt-[50px]"
               />
             </div>
-            <div className="flex justify-center mt-[70px] pl-20 max-[1250px]:pl-10 gap-[14px]  items-center">
-              <img src={android} alt="" />
-              <img src={ios} alt="" />
+            <div className="flex justify-center mt-[70px] pl-20 max-[1250px]:pl-10 gap-[14px]  items-center ">
+              <img
+                onClick={() => handleRedirect("android")}
+                src={android}
+                alt=""
+                className="cursor-pointer"
+              />
+              <img
+                onClick={() => handleRedirect("ios")}
+                src={ios}
+                alt=""
+                className="cursor-pointer"
+              />
             </div>
           </div>
         </div>

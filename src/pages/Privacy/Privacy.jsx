@@ -2,6 +2,7 @@ import React from "react";
 import android from "../../assets/Android Download Button.svg";
 import ios from "../../assets/Apple Download Button.svg";
 import { Trans, useTranslation } from "react-i18next";
+import { handleRedirect } from "../../utils/appRedirect";
 const Privacy = () => {
   const { t } = useTranslation();
 
@@ -21,8 +22,18 @@ const Privacy = () => {
         <p>Eiusm sed te ad e labore ubi. Omnis et. Te’i Morbi.</p>
       </div>
       <div className="flex flex-col md:flex-row items-center max-md:justify-center gap-[14px] mt-[100px]  max-lg:mt-[60px] pl-[112px]  max-lg:pl-[64px] max-md:pl-0 w-full absolute">
-        <img src={android} alt="" />
-        <img src={ios} alt="" />
+        <img
+          onClick={() => handleRedirect("android")}
+          src={android}
+          alt=""
+          className="cursor-pointer"
+        />
+        <img
+          onClick={() => handleRedirect("ios")}
+          src={ios}
+          alt=""
+          className="cursor-pointer"
+        />
       </div>
     </div>
   );
