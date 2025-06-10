@@ -10,7 +10,6 @@ import { useEffect } from "react";
 
 const Footer = () => {
   const [emailSend, { isLoading, error }] = useEmailSendMutation();
-  console.log(error);
   const {
     register,
     handleSubmit,
@@ -47,8 +46,8 @@ const Footer = () => {
     }
   };
   useEffect(() => {
-    trigger();
-  }, [i18n.language, trigger]);
+    reset(); 
+  }, [i18n.language, reset]);
   return (
     <>
       <form
@@ -62,7 +61,7 @@ const Footer = () => {
           <div className="flex flex-col gap-y-[7px]">
             <div>
               <input
-                {...register("email", {
+                {...register("senderEmail", {
                   required: t("emailRequired") || "Email is required",
                   pattern: {
                     value: /^\S+@\S+$/i,
@@ -80,7 +79,7 @@ const Footer = () => {
 
             <div>
               <textarea
-                {...register("message", {
+                {...register("description", {
                   required: t("messageRequired"),
                   minLength: {
                     value: 5,
