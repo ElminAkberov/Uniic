@@ -46,7 +46,7 @@ const Footer = () => {
     }
   };
   useEffect(() => {
-    reset(); 
+    reset();
   }, [i18n.language, reset]);
   return (
     <>
@@ -64,7 +64,7 @@ const Footer = () => {
                 {...register("senderEmail", {
                   required: t("emailRequired") || "Email is required",
                   pattern: {
-                    value: /^\S+@\S+$/i,
+                    value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
                     message: t("invalidEmail") || "Invalid email address",
                   },
                 })}
@@ -72,8 +72,10 @@ const Footer = () => {
                 placeholder={t("emailPlaceholder")}
                 className="placeholder:text-[#9999A5] sofia-pro bg-white rounded-[10px] pl-[20px] py-2 w-full"
               />
-              {errors.email && (
-                <p className="text-red-500 text-sm ">{errors.email.message}</p>
+              {errors.senderEmail && (
+                <p className="text-red-500 text-sm ">
+                  {errors.senderEmail.message}
+                </p>
               )}
             </div>
 
@@ -89,9 +91,9 @@ const Footer = () => {
                 placeholder={t("messagePlaceholder")}
                 className="placeholder:text-[#9999A5] sofia-pro bg-white rounded-[10px] pl-[20px] py-2 w-full"
               />
-              {errors.message && (
+              {errors.description && (
                 <p className="text-red-500 text-sm ">
-                  {errors.message.message}
+                  {errors.description.message}
                 </p>
               )}
             </div>
