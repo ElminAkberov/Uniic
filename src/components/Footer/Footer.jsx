@@ -4,15 +4,28 @@ import { NavLink } from "react-router-dom";
 import world from "../../assets/world_black.svg";
 import { FaCaretDown } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import { useEmailSendMutation } from "../../features/login/loginSlice";
+import { useForm } from "react-hook-form";
+import { useEffect } from "react";
 
 const Footer = () => {
+  const [emailSend, { isLoading, error }] = useEmailSendMutation();
+  console.log(error);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+    trigger,
+  } = useForm();
+  const [isOpen, setIsOpen] = React.useState(false);
+  const [isMessage, setIsMessage] = React.useState(false);
   const { t, i18n } = useTranslation();
   const language = [
     { id: 1, lng: "EN", code: "en" },
     { id: 2, lng: "PT", code: "pt" },
     { id: 3, lng: "ES", code: "es" },
   ];
-  const [isOpen, setIsOpen] = React.useState(false);
   const handleLanguageChange = (e) => {
     const selectedLang = language.find(
       (l) => l.id === parseInt(e.target.value)
@@ -21,32 +34,91 @@ const Footer = () => {
       i18n.changeLanguage(selectedLang.code);
     }
   };
+  const onSubmit = async (data) => {
+    try {
+      await emailSend(data).unwrap();
+      setIsMessage(true);
+      setTimeout(() => {
+        setIsMessage(false);
+      }, 2000);
+      reset();
+    } catch (err) {
+      console.error("Error:", err);
+    }
+  };
+  useEffect(() => {
+    trigger();
+  }, [i18n.language, trigger]);
   return (
     <>
-      <div className="flex justify-center md:justify-end md:mr-[60px] max-md:mx-[22px] mt-[110px]">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="flex justify-center md:justify-end md:mr-[60px] max-md:mx-[22px] mt-[110px]"
+      >
         <div className="bg-[#F2F2F2] rounded-[14px] w-[478px] px-[25px] py-[34px]">
           <h3 className="sofia-light text-[22px] mb-[33px]">
             <b className="sofia-bold">{t("questionBold")}</b> {t("question")}
           </h3>
           <div className="flex flex-col gap-y-[7px]">
-            <input
-              type="text"
-              placeholder={t("emailPlaceholder")}
-              className="placeholder:text-[#9999A5] sofia-pro bg-white rounded-[10px] pl-[20px] py-2"
-            />
-            <textarea
-              placeholder={t("messagePlaceholder")}
-              className="placeholder:text-[#9999A5] sofia-pro bg-white rounded-[10px] pl-[20px] py-2"
-            />
-          </div>
+            <div>
+              <input
+                {...register("email", {
+                  required: t("emailRequired") || "Email is required",
+                  pattern: {
+                    value: /^\S+@\S+$/i,
+                    message: t("invalidEmail") || "Invalid email address",
+                  },
+                })}
+                type="email"
+                placeholder={t("emailPlaceholder")}
+                className="placeholder:text-[#9999A5] sofia-pro bg-white rounded-[10px] pl-[20px] py-2 w-full"
+              />
+              {errors.email && (
+                <p className="text-red-500 text-sm ">{errors.email.message}</p>
+              )}
+            </div>
+
+            <div>
+              <textarea
+                {...register("message", {
+                  required: t("messageRequired"),
+                  minLength: {
+                    value: 5,
+                    message: t("messageTooShort"),
+                  },
+                })}
+                placeholder={t("messagePlaceholder")}
+                className="placeholder:text-[#9999A5] sofia-pro bg-white rounded-[10px] pl-[20px] py-2 w-full"
+              />
+              {errors.message && (
+                <p className="text-red-500 text-sm ">
+                  {errors.message.message}
+                </p>
+              )}
+            </div>
+          </div>{" "}
+          {isMessage && (
+            <div className=" mt-2 rounded-lg  text-center">
+              <p className="text-lg sofia-pro">{t("thanksForContact")}</p>
+            </div>
+          )}
+          {error && (
+            <div className=" mt-2 rounded-lg  text-center">
+              <p className="text-lg sofia-pro">{t("errorContact")}</p>
+            </div>
+          )}
           <div className="flex justify-end">
-            <Button
-              text={t("sendButton")}
-              className="bg-black rounded-[7px] text-white px-[30px] py-[10px] mt-[15px]"
-            />
+            <button
+              type="submit"
+              className=" sofia-pro cursor-pointer hover:opacity-85 active:opacity-75 duration-300 bg-black rounded-[7px] text-white px-[30px] py-[10px] mt-[15px]"
+              disabled={isLoading}
+            >
+              {isLoading ? t("loading") : t("sendButton")}
+            </button>
           </div>
         </div>
-      </div>
+      </form>
+
       <div className="md:hidden !cursor-pointer mt-10 pl-[9px] pr-1 py-1 max-md:mx-[22px] w-fit rounded-md flex gap-x-2 items-center shadow-[1px_1px_6px_0px_#00000040] relative bg-white">
         <img src={world} alt="world_Logo" />
         <select

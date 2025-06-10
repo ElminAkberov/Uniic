@@ -1,28 +1,18 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-export const login = createApi({
-  reducerPath: "login",
+export const emailSend = createApi({
+  reducerPath: "emailSend",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://dev.4pay.cash/api/v2/",
+    baseUrl: "http://49.12.229.219:8080/api/uniic-app-service/",
   }),
   endpoints: (builder) => ({
-    loginTrader: builder.mutation({
-      query: (credentials) => ({
-        url: "auth/login/",
+    emailSend: builder.mutation({
+      query: (message) => ({
+        url: "external/user-website-ticket/submit",
         method: "POST",
-        body: credentials,
+        body: message,
       }),
-      onQuerySuccess: (response) => {
-        const { accessToken, refreshToken } = response;
-        if (accessToken) {
-          localStorage.setItem("accessToken", accessToken);
-        }
-        if (refreshToken) {
-          localStorage.setItem("refreshToken", refreshToken);
-        }
-      },
     }),
   }),
 });
-
-export const { useLoginTraderMutation } = login;
+export const { useEmailSendMutation } = emailSend;

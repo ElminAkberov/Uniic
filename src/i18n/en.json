@@ -87,5 +87,12 @@
   "messagePlaceholder": "Insert your message here",
   "sendButton": "Send",
   "privacyPolicy": "Privacy Policy",
-  "privacyPolicyBr": "Privacy <br /> Policy"
+  "privacyPolicyBr": "Privacy <br /> Policy",
+  "invalidEmail": "Invalid email address",
+  "emailRequired": "Email is required",
+  "messageRequired": "Message is required",
+  "messageTooShort": "Message must be at least 5 characters",
+  "loading": "Sending...",
+  "thanksForContact": "Thank you for contacting us!",
+  "errorContact": "An error occurred, please try again."
 }

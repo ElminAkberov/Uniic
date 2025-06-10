@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { login } from "../features/login/loginSlice";
+import { emailSend } from "../features/login/loginSlice";
 
 export const store = configureStore({
   reducer: {
-    [login.reducerPath]: login.reducer,
+    [emailSend.reducerPath]: emailSend.reducer,
   },
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(login.middleware),
+    getDefaultMiddleware().concat(emailSend.middleware),
 });

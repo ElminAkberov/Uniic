@@ -31,6 +31,3 @@
   @apply pl-7 md:!px-[50px] pr-[13px] pt-[15px] pb-[17px];
   @apply md:bg-black max-md:bg-white;
 }
-textarea {
-  resize: none;
-}

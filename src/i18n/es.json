@@ -87,5 +87,12 @@
   "messagePlaceholder": "Introduce tu mensaje aquí",
   "sendButton": "Enviar",
   "privacyPolicy": "Política de privacidad",
-  "privacyPolicyBr": "Política de <br/> privacidad"
+  "privacyPolicyBr": "Política de <br/> privacidad",
+  "invalidEmail": "Dirección de correo electrónico no válida",
+  "emailRequired": "El correo electrónico es obligatorio",
+  "messageRequired": "El mensaje es obligatorio",
+  "messageTooShort": "El mensaje debe tener al menos 5 caracteres",
+  "loading": "Enviando...",
+  "thanksForContact": "¡Gracias por contactarnos!",
+  "errorContact": "Ocurrió un error, por favor intenta de nuevo."
 }
