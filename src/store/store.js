@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { emailSend } from "../features/login/loginSlice";
+import { emailSend } from "../features/emailSend/emailSend";
 
 export const store = configureStore({
   reducer: {

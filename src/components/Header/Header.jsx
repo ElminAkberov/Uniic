@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import logo from "../../assets/logo.svg";
 import white_logo from "../../assets/white_logo.svg";
 import world from "../../assets/lng.svg";
@@ -48,7 +48,7 @@ const Header = () => {
               onClick={() => setIsOpen(!isOpen)}
               onChange={handleLanguageChange}
             >
-              {language.map((lang, idx) => (
+              {language.map((lang) => (
                 <option
                   key={lang.id}
                   value={lang.id}

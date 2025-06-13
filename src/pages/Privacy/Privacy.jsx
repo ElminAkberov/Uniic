@@ -1,11 +1,9 @@
 import React from "react";
 import android from "../../assets/Android Download Button.svg";
 import ios from "../../assets/Apple Download Button.svg";
-import { Trans, useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 import { handleRedirect } from "../../utils/appRedirect";
 const Privacy = () => {
-  const { t } = useTranslation();
-
   return (
     <div className="sofia-pro relative max-lg:mb-20">
       <h1 className="text-[#141415] pl-[112px] max-lg:pl-[64px] pt-[80px] max-md:pt-[61px] max-md:pl-[28px] leading-[64px] text-[64px] max-md:text-[44px] max-md:leading-[44px] mb-[30px]">

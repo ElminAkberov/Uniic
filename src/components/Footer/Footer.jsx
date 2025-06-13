@@ -1,10 +1,9 @@
 import React from "react";
-import Button from "../Button/Button";
 import { NavLink } from "react-router-dom";
 import world from "../../assets/world_black.svg";
 import { FaCaretDown } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-import { useEmailSendMutation } from "../../features/login/loginSlice";
+import { useEmailSendMutation } from "../../features/emailSend/emailSend";
 import { useForm } from "react-hook-form";
 import { useEffect } from "react";
 
@@ -15,7 +14,6 @@ const Footer = () => {
     handleSubmit,
     reset,
     formState: { errors },
-    trigger,
   } = useForm();
   const [isOpen, setIsOpen] = React.useState(false);
   const [isMessage, setIsMessage] = React.useState(false);
