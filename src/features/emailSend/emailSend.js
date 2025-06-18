@@ -3,12 +3,12 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const emailSend = createApi({
   reducerPath: "emailSend",
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://5.78.105.154:8080/api/uniic-app-service/",
+    baseUrl: "https://api.uniic.app/api/uniic-app-service/",
   }),
   endpoints: (builder) => ({
     emailSend: builder.mutation({
       query: (message) => ({
-        url: "external/user-website-ticket/submit",
+        url: "external/user-website-ticket",
         method: "POST",
         body: message,
       }),
