@@ -21,7 +21,7 @@ const Info = () => {
         />
       </div>
       <div className="bg-black rounded-[57px]   py-[90px] pb-[50px]">
-        <div className="pl-[127px] pr-[161px] max-md:px-[40px] text-white">
+        <div className="pl-[127px] pr-[161px] max-lg:px-[60px] max-md:px-[40px] text-white">
           <h3 className="text-[44px] leading-[44px] mb-16 ">
             {t("info.heading")}
           </h3>
