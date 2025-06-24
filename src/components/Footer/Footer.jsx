@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 import { NavLink } from "react-router-dom";
 import world from "../../assets/world_black.svg";
 import { FaCaretDown } from "react-icons/fa";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import { useEmailSendMutation } from "../../features/emailSend/emailSend";
 import { useForm } from "react-hook-form";
 import { useEffect } from "react";
+import Button from "../Button/Button";
 
 const Footer = () => {
   const [emailSend, { isLoading, error }] = useEmailSendMutation();
@@ -46,13 +47,46 @@ const Footer = () => {
   useEffect(() => {
     reset();
   }, [i18n.language, reset]);
+  const selectedLang =
+    language.find((l) => l.code === i18n.language) || language[0];
+  const dropdownRef = useRef(null);
+
+  // Dropdown dışına tıklanırsa kapansın
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  function onSelect(lang) {
+    handleLanguageChange({ target: { value: lang.id } });
+    setIsOpen(false);
+  }
   return (
     <>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex justify-center md:justify-end md:mr-[60px] max-md:mx-[22px] mt-[110px]"
+        className="flex justify-center max-lg:items-center max-[1024px]:flex-col md:justify-between mx-[114px]  max-md:mx-[22px] mt-[110px]"
       >
-        <div className="bg-[#F2F2F2] rounded-[14px] w-[478px] px-[25px] py-[34px]">
+        <div className="flex flex-col max-lg:mb-10">
+          <p className="text-[32px] leading-[40px] sofia-light  pb-8">
+            <Trans
+              i18nKey="footerText"
+              components={{ bold: <strong className="sofia-bold" /> }}
+            />
+          </p>
+          <Button
+            className={
+              "px-[23px] py-4 rounded-full font-[500] text-black bg-[#BFD0DD]"
+            }
+            text={t("buttonText")}
+          />
+        </div>
+        <div className="bg-[#F2F2F2] rounded-[14px]  max-w-[480px] w-full px-[25px] max-md:!mx-[22px] py-[34px] ">
           <h3 className="sofia-light text-[22px] mb-[33px]">
             <b className="sofia-bold">{t("questionBold")}</b> {t("question")}
           </h3>
@@ -118,28 +152,39 @@ const Footer = () => {
         </div>
       </form>
 
-      <div className="md:hidden !cursor-pointer mt-10 pl-[9px] pr-1 py-1 max-md:mx-[22px] w-fit rounded-md flex gap-x-2 items-center shadow-[1px_1px_6px_0px_#00000040] relative bg-white">
+      <div
+        ref={dropdownRef}
+        className="md:hidden !cursor-pointer mt-10 pl-[9px] pr-1 py-1 max-md:mx-[22px] w-fit rounded-md flex gap-x-1 items-center shadow-[1px_1px_6px_0px_#00000040] relative bg-white"
+      >
         <img src={world} alt="world_Logo" />
-        <select
-          value={language.find((l) => l.code === i18n.language)?.id || 1}
-          className="appearance-none bg-transparent pr-6 cursor-pointer outline-none sofia-pro text-black text-center"
-          onBlur={() => setIsOpen(false)}
-          onClick={() => setIsOpen(!isOpen)}
-          onChange={handleLanguageChange}
+        <div
+          onClick={() => setIsOpen((prev) => !prev)}
+          className="sofia-pro text-black cursor-pointer select-none"
         >
-          {language.map((lang) => (
-            <option key={lang.id} value={lang.id} className="text-black">
-              {lang.lng}
-            </option>
-          ))}
-        </select>
+          {selectedLang.lng}
+        </div>
         <FaCaretDown
-          className={`pointer-events-none absolute right-2 top-1/2 transform -translate-y-1/2 transition-transform duration-300 ${
+          className={`pointer-events-none   transform  transition-transform duration-300 ${
             !isOpen ? "rotate-180" : "rotate-0"
           }`}
         />
+        {isOpen && (
+          <ul className="absolute px-1 bottom-full mb-1 left-[25px] w-full max-w-[48px] bg-white rounded-md shadow-lg max-h-40 overflow-auto z-50">
+            {language.map((lang, index) => (
+              <li
+                key={lang.id}
+                onClick={() => onSelect(lang)}
+                className={`px-2 py-1 text-center hover:bg-gray-100 cursor-pointer flex justify-center gap-2 sofia-pro ${
+                  index !== language.length - 1 ? "border-b border-[#EDEDED] " : ""
+                }`}
+              >
+                {lang.lng}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
-      <div className="text-[#6C6C6C] sofia-pro max-md:flex justify-center gap-x-7 md:ml-[90px] py-[35px]">
+      <div className="text-[#6C6C6C] sofia-pro max-md:flex justify-center gap-x-7 md:ml-[114px] max-md:!mx-[22px] py-[35px]">
         <span className="mr-12">© {new Date().getFullYear()} Uniic</span>
         <NavLink to="/privacy-policy">{t("privacyPolicy")}</NavLink>
       </div>

@@ -11,10 +11,13 @@ const Features = () => {
 
   return (
     <div className="max-md:mb-[180px]">
-      <div className="pl-[112px] max-lg:pl-[64px] max-md:pl-5 ">
+      <div className=" ">
         <div>
-          <h2 className="text-[#141415] max-md:text-[44px] text-[64px] leading-[64px] max-md:leading-[44px] pr-[25px] pt-[120px] whitespace-pre-line">
-            {t("problemHeading")}
+          <h2 className="text-[#141415] max-md:text-[44px] text-[64px] leading-[64px] max-md:leading-[44px] pr-[30px] pt-[120px] whitespace-pre-line   max-md:whitespace-normal">
+            <Trans
+              i18nKey={"problemHeading"}
+              components={{ span: <span style={{ whiteSpace: "nowrap" }} /> }}
+            />
           </h2>
           <p className="text-[26px] text-[#141414] leading-[30px] pt-[25px] md:pt-[30px] pb-[30px] md:pb-[20px]">
             {t("problemSub")}
@@ -35,7 +38,7 @@ const Features = () => {
           </div>
         </div>
 
-        <div className="mt-[52px] w-[65%] max-lg:w-[80%] max-md:w-full">
+        <div className="mt-[52px] w-[70%] max-lg:w-[80%] max-md:w-full">
           {features.map((feature, idx) => (
             <div
               key={idx}
@@ -47,7 +50,7 @@ const Features = () => {
               </span>
             </div>
           ))}
-          <p className="sofia-light text-[#6C6C6C] text-2xl max-md:mr-[20px] mt-[24px] max-md:mt-[32px]">
+          <p className="sofia-light text-[#6C6C6C] text-xl max-md:mr-[20px] mt-[24px] max-md:mt-[32px]">
             <Trans
               i18nKey="rightPeople"
               components={{ bold: <b className="sofia-bold" /> }}

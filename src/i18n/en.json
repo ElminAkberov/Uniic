@@ -1,6 +1,6 @@
 {
   "getStarted": "Get Started",
-  "betterConnections": "Better\nconnections",
+  "betterConnections": "Better\nConnections",
   "findingPerson": "Finding the right person is harder than finding a good oat milk cappuccino in 2012.",
   "sucksText": "Dating apps suck. Networking is awkward. Making new friends as an adult is basically illegal. Travel buddies either ruin your trip or disappear when the bill comes. Business partners? Might as well be a toxic ex with equity.",
   "thereIsWay": "There has to be a better way. There is. It’s",
@@ -76,7 +76,7 @@
     {
       "step": "Step 3",
       "header": "Meet\nYour People",
-      "desc": "Because life is too short for bad relationships, dead-end friendships, and unreliable gym partners."
+      "desc": "Because life is too short for bad relationships, dead-end friendships, and unreliable <br /> gym partners."
     }
   ],
   "footerText": "Stop Swiping. <bold>Connect.</bold>",

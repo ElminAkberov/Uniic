@@ -8,10 +8,14 @@ const Home = () => {
   return (
     <menu className="w-full sofia-pro ">
       <Hero />
-      <Features />
-      <Info />
+      <div className="!mx-[114px] max-md:!mx-[22px]">
+        <Features />
+        <Info />
+      </div>
       <Catalog />
-      <HowItWorks />
+      <div className="!mx-[114px] max-md:!mx-[22px]">
+        <HowItWorks />
+      </div>
     </menu>
   );
 };

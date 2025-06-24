@@ -14,7 +14,7 @@ const Catalog = () => {
   const [sliderRef] = useKeenSlider({
     slides: {
       perView: 3.7,
-      spacing: 10,
+      spacing: 3,
     },
     breakpoints: {
       "(min-width: 768px)": {

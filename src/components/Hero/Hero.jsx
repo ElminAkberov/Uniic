@@ -4,7 +4,7 @@ import android from "../../assets/Android Download Button.svg";
 import ios from "../../assets/Apple Download Button.svg";
 import main from "../../assets/main_img_max-md.svg";
 import main_md from "../../assets/main-md.svg";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import { handleRedirect } from "../../utils/appRedirect";
 
 const Hero = () => {
@@ -39,14 +39,16 @@ const Hero = () => {
         </div>
         <div className="mt-[150px] pl-7 pr-9">
           <h4 className="text-[#6C6C6C] font-[900] sofia-extralight">
-            {t("findingPerson")}
+            <Trans i18nKey={"findingPerson"}></Trans>
           </h4>
           <p className="py-4 text-[#6C6C6C] sofia-extralight">
             {t("sucksText")}
           </p>
           <div className="text-[#6C6C6C] ">
-            <span className="sofia-extralight">{t("thereIsWay")} </span>
-            <p className="!font-bold">Uniic.</p>
+            <div>
+              <span className="sofia-extralight">{t("thereIsWay")} </span>
+              <span className="!font-bold"> Uniic.</span>
+            </div>
           </div>
           <Button
             text={t("testUnique")}
@@ -58,19 +60,19 @@ const Hero = () => {
       <div className="max-md:hidden block pl-[112px] max-lg:pl-[64px] pt-[80px]">
         <div className="flex gap-x-[112px] max-[1250px]:gap-x-[20px] items-center">
           <div className="max-[1200px]:w-1/2">
-            <h1 className="text-[#141415] leading-[64px] text-[64px] whitespace-pre-line">
+            <h1 className="text-[#141415] leading-[64px] text-[60px] whitespace-pre-line">
               {t("betterConnections")}
             </h1>
-            <div className="mt-[30px]">
-              <h4 className="text-[#6C6C6C] text-[32px] max-[1250px]:text-[24px] max-lg:text-[18px] font-[600] sofia-light">
-                {t("findingPerson")}
+            <div className="mt-[30px] ml-[2px]">
+              <h4 className="text-[#6C6C6C]  text-[28px] max-[1250px]:text-[24px] max-lg:text-[18px] font-[600] sofia-light">
+                <Trans i18nKey={"findingPerson"}></Trans>
               </h4>
-              <p className="py-4 text-[24px] max-[1250px]:text-[18px] max-lg:text-[16px] text-[#6C6C6C] sofia-extralight">
+              <p className="py-3 text-[22px] max-[1250px]:text-[18px] max-lg:text-[16px] text-[#6C6C6C] sofia-extralight">
                 {t("sucksText")}
               </p>
-              <div className="text-[#6C6C6C] text-[24px] max-[1250px]:text-[18px] max-lg:text-[16px]">
-                <span className="sofia-extralight">{t("thereIsWay")} </span>
-                <span className="!font-bold">Uniic.</span>
+              <div className="text-[#6C6C6C] text-[22px] max-[1250px]:text-[18px] max-lg:text-[16px]">
+                <span className="sofia-extralight"> {t("thereIsWay")} </span>
+                <span className="!font-bold"> Uniic.</span>
               </div>
               <Button
                 text={t("testUnique")}

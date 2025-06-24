@@ -60,7 +60,7 @@ const Header = () => {
             </select>
             <FaCaretDown
               className={`pointer-events-none absolute right-2 top-1/2 transform -translate-y-1/2 transition-transform duration-300 ${
-                !isOpen ? "rotate-180" : "rotate-0"
+                isOpen ? "rotate-180" : "rotate-0"
               }`}
             />
           </div>
