@@ -38,7 +38,7 @@ const Features = () => {
           </div>
         </div>
 
-        <div className="mt-[52px] w-[70%] max-lg:w-[80%] max-md:w-full">
+        <div className="mt-[52px] w-[75%] max-lg:w-[80%] max-md:w-full">
           {features.map((feature, idx) => (
             <div
               key={idx}

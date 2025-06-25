@@ -94,5 +94,113 @@
   "messageTooShort": "Message must be at least 5 characters",
   "loading": "Sending...",
   "thanksForContact": "Thank you for contacting us!",
-  "errorContact": "An error occurred, please try again."
+  "errorContact": "An error occurred, please try again.",
+  "ptitle": "Terms and Conditions for Uniic App",
+  "date": "Effective Date: 18th January 2025 | Last Updated: 22nd January 2025",
+  "intro": "Welcome to Uniic (\"the App\"), a global social connections and personal development platform currently in beta development, designed to connect users through meaningful interactions and tools for growth. By accessing or using the App, you agree to these Terms and Conditions (\"Terms\"). If you do not agree to these Terms, you must discontinue use of the App immediately.",
+  "sections": {
+    "acceptance": {
+      "title": "1. Acceptance of Terms",
+      "points": [
+        "You are at least 18 years old or the legal age of majority in your jurisdiction.",
+        "You have read, understood, and agreed to these Terms.",
+        "You will comply with all applicable laws and regulations in your region."
+      ]
+    },
+    "privacy": {
+      "title": "2. Data Collection and Privacy",
+      "collect": {
+        "title": "2.1 Data We Collect",
+        "items": [
+          "Personal Information: Name, email address, phone number, age, gender, and other profile details.",
+          "Beta Testing Feedback: Crash logs, error reports, and user feedback.",
+          "Usage Data: Interactions with the App, questionnaire responses, navigation history."
+        ]
+      },
+      "usage": {
+        "title": "2.2 How We Use Your Data",
+        "items": [
+          "To notify you about App updates and improvements.",
+          "To collect feedback and improve the App during beta.",
+          "To send you marketing or informational content where permitted."
+        ]
+      },
+      "sharing": {
+        "title": "2.3 Data Sharing",
+        "items": [
+          "Shared with trusted third parties under confidentiality.",
+          "Not sold to third parties.",
+          "May be disclosed if required by law or legal processes."
+        ]
+      },
+      "rights": {
+        "title": "2.4 Your Rights",
+        "items": [
+          "You have the right to access, correct, or delete your data.",
+          "Unsubscribe or request deletion via contact@uniic.app."
+        ]
+      }
+    },
+    "beta": {
+      "title": "3. Beta Testing",
+      "ios": {
+        "title": "3.1 iOS TestFlight",
+        "desc": "Available via Apple TestFlight. You agree to Apple’s terms and conditions."
+      },
+      "android": {
+        "title": "3.2 Android Beta Testing",
+        "desc": "Available on Android. You agree to applicable beta terms."
+      },
+      "limitations": {
+        "title": "3.3 Beta Testing Limitations",
+        "items": [
+          "Beta version is provided \"AS IS\".",
+          "No liability for bugs or issues.",
+          "Feedback is appreciated but not compensated."
+        ]
+      }
+    },
+    "email": {
+      "title": "4. Email and Phone Number Use",
+      "items": [
+        "We may contact you for updates or marketing.",
+        "You can opt out of non-essential messages.",
+        "Your data is stored securely."
+      ]
+    },
+    "global": {
+      "title": "5. Global Applicability",
+      "desc": "These Terms aim to comply with global data protection standards, including user rights and data transparency."
+    },
+    "liability": {
+      "title": "6. Liability Disclaimer",
+      "items": [
+        "App is provided \"AS IS\" without warranties.",
+        "Uniic is not liable for beta-related damages.",
+        "Liability limited to any amount you paid (if any)."
+      ]
+    },
+    "ip": {
+      "title": "7. Intellectual Property",
+      "items": [
+        "All content and trademarks belong to Uniic or licensors.",
+        "No copying or distribution without permission."
+      ]
+    },
+    "termination": {
+      "title": "8. Termination of Access",
+      "items": [
+        "Access may be terminated for violations.",
+        "You may leave beta by uninstalling the App."
+      ]
+    },
+    "amendments": {
+      "title": "9. Amendments to Terms",
+      "desc": "Terms may be updated at any time. Updates will be communicated through email or the App. Continued use signifies acceptance."
+    },
+    "contact": {
+      "title": "10. Contact Information",
+      "desc": "For questions or concerns, contact: support@uniic.app"
+    }
+  }
 }

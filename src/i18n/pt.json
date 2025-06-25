@@ -94,5 +94,113 @@
   "messageTooShort": "A mensagem deve ter no mínimo 5 caracteres",
   "loading": "Enviando...",
   "thanksForContact": "Obrigado por entrar em contato!",
-  "errorContact": "Ocorreu um erro, tente novamente."
+  "errorContact": "Ocorreu um erro, tente novamente.",
+  "ptitle": "Termos e Condições do Aplicativo Uniic",
+  "date": "Data de Vigência: 18 de janeiro de 2025 | Última Atualização: 22 de janeiro de 2025",
+  "intro": "Bem-vindo ao Uniic (\"o Aplicativo\"), uma plataforma global de conexões sociais e desenvolvimento pessoal em fase beta, projetada para conectar usuários por meio de interações significativas e ferramentas de crescimento. Ao acessar ou usar o Aplicativo, você concorda com estes Termos e Condições (\"Termos\"). Se você não concordar, deverá parar de usar o Aplicativo imediatamente.",
+  "sections": {
+    "acceptance": {
+      "title": "1. Aceitação dos Termos",
+      "points": [
+        "Você tem pelo menos 18 anos ou a maioridade legal em sua jurisdição.",
+        "Você leu, entendeu e aceitou estes Termos.",
+        "Você cumprirá todas as leis e regulamentos aplicáveis em sua região."
+      ]
+    },
+    "privacy": {
+      "title": "2. Coleta e Privacidade de Dados",
+      "collect": {
+        "title": "2.1 Dados que Coletamos",
+        "items": [
+          "Informações pessoais: nome, e-mail, telefone, idade, gênero e outros detalhes do perfil.",
+          "Feedback da versão beta: registros de erros, relatórios de falhas e comentários dos usuários.",
+          "Dados de uso: interações com o aplicativo, respostas a questionários, histórico de navegação."
+        ]
+      },
+      "usage": {
+        "title": "2.2 Como Usamos seus Dados",
+        "items": [
+          "Para notificá-lo sobre atualizações e melhorias do aplicativo.",
+          "Para coletar feedback e melhorar o aplicativo durante a versão beta.",
+          "Para enviar conteúdos de marketing ou informativos, quando permitido."
+        ]
+      },
+      "sharing": {
+        "title": "2.3 Compartilhamento de Dados",
+        "items": [
+          "Compartilhado com terceiros confiáveis sob confidencialidade.",
+          "Não será vendido a terceiros.",
+          "Pode ser divulgado se exigido por lei."
+        ]
+      },
+      "rights": {
+        "title": "2.4 Seus Direitos",
+        "items": [
+          "Você tem o direito de acessar, corrigir ou excluir seus dados.",
+          "Para isso, entre em contato pelo e-mail: contact@uniic.app."
+        ]
+      }
+    },
+    "beta": {
+      "title": "3. Testes Beta",
+      "ios": {
+        "title": "3.1 TestFlight no iOS",
+        "desc": "Disponível via Apple TestFlight. Você concorda com os termos da Apple."
+      },
+      "android": {
+        "title": "3.2 Teste Beta no Android",
+        "desc": "Disponível em dispositivos Android. Você concorda com os termos aplicáveis."
+      },
+      "limitations": {
+        "title": "3.3 Limitações da Versão Beta",
+        "items": [
+          "A versão beta é fornecida \"COMO ESTÁ\".",
+          "Sem responsabilidade por erros ou falhas.",
+          "Feedback é bem-vindo, mas não será recompensado."
+        ]
+      }
+    },
+    "email": {
+      "title": "4. Uso de E-mail e Telefone",
+      "items": [
+        "Podemos contatá-lo para atualizações ou marketing.",
+        "Você pode cancelar mensagens não essenciais.",
+        "Suas informações são armazenadas com segurança."
+      ]
+    },
+    "global": {
+      "title": "5. Aplicabilidade Global",
+      "desc": "Estes termos estão em conformidade com padrões globais de proteção de dados, incluindo direitos e transparência."
+    },
+    "liability": {
+      "title": "6. Isenção de Responsabilidade",
+      "items": [
+        "Aplicativo fornecido \"COMO ESTÁ\" sem garantias.",
+        "A Uniic não é responsável por danos durante a versão beta.",
+        "A responsabilidade é limitada ao valor que você pagou, se aplicável."
+      ]
+    },
+    "ip": {
+      "title": "7. Propriedade Intelectual",
+      "items": [
+        "Todo conteúdo e marcas pertencem à Uniic ou seus licenciadores.",
+        "Proibida a cópia ou distribuição sem permissão prévia."
+      ]
+    },
+    "termination": {
+      "title": "8. Término do Acesso",
+      "items": [
+        "Acesso pode ser suspenso por violações.",
+        "Você pode sair da beta desinstalando o aplicativo."
+      ]
+    },
+    "amendments": {
+      "title": "9. Alterações nos Termos",
+      "desc": "Os termos podem ser atualizados a qualquer momento. Notificações serão enviadas por e-mail ou no aplicativo. O uso contínuo indica aceitação."
+    },
+    "contact": {
+      "title": "10. Informações de Contato",
+      "desc": "Em caso de dúvidas, entre em contato: support@uniic.app"
+    }
+  }
 }

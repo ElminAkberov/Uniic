@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import world from "../../assets/world_black.svg";
 import { FaCaretDown } from "react-icons/fa";
 import { Trans, useTranslation } from "react-i18next";
@@ -16,6 +16,7 @@ const Footer = () => {
     reset,
     formState: { errors },
   } = useForm();
+  const { pathname } = useLocation();
   const [isOpen, setIsOpen] = React.useState(false);
   const [isMessage, setIsMessage] = React.useState(false);
   const { t, i18n } = useTranslation();
@@ -72,7 +73,12 @@ const Footer = () => {
         onSubmit={handleSubmit(onSubmit)}
         className="flex justify-center max-lg:items-center max-[1024px]:flex-col md:justify-between mx-[114px]  max-md:mx-[22px] mt-[110px]"
       >
-        <div className="flex flex-col max-lg:mb-10">
+        <div
+          className={`flex flex-col max-lg:mb-10 ${
+            pathname == "/privacy-policy" &&
+            "opacity-0 max-lg:hidden pointer-events-none"
+          } `}
+        >
           <p className="text-[32px] leading-[40px] sofia-light  pb-8">
             <Trans
               i18nKey="footerText"
@@ -175,7 +181,9 @@ const Footer = () => {
                 key={lang.id}
                 onClick={() => onSelect(lang)}
                 className={`px-2 py-1 text-center hover:bg-gray-100 cursor-pointer flex justify-center gap-2 sofia-pro ${
-                  index !== language.length - 1 ? "border-b border-[#EDEDED] " : ""
+                  index !== language.length - 1
+                    ? "border-b border-[#EDEDED] "
+                    : ""
                 }`}
               >
                 {lang.lng}
