@@ -52,7 +52,6 @@ const Footer = () => {
     language.find((l) => l.code === i18n.language) || language[0];
   const dropdownRef = useRef(null);
 
-  // Dropdown dışına tıklanırsa kapansın
   useEffect(() => {
     function handleClickOutside(event) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -75,7 +74,8 @@ const Footer = () => {
       >
         <div
           className={`flex flex-col max-lg:mb-10 ${
-            pathname == "/privacy-policy" &&
+            (pathname == "/privacy-policy" ||
+              pathname == "/terms-and-conditions") &&
             "opacity-0 max-lg:hidden pointer-events-none"
           } `}
         >
@@ -192,9 +192,16 @@ const Footer = () => {
           </ul>
         )}
       </div>
-      <div className="text-[#6C6C6C] sofia-pro max-md:flex justify-center gap-x-7 md:ml-[114px] max-md:!mx-[22px] py-[35px]">
-        <span className="mr-12">© {new Date().getFullYear()} Uniic</span>
-        <NavLink to="/privacy-policy">{t("privacyPolicy")}</NavLink>
+      <div className="text-[#6C6C6C] sofia-pro flex max-md:flex-col items-center max-lg:justify-center lg:ml-[114px] gap-x-7 gap-y-3  py-[35px]">
+        <span className="lg:mr-12">© {new Date().getFullYear()} Uniic</span>
+        <div>
+          <NavLink to="/privacy-policy">{t("privacyPolicy")}</NavLink>
+        </div>
+        <div>
+          <NavLink to="/terms-and-conditions">
+            {t("termsAndConditions")}
+          </NavLink>
+        </div>
       </div>
     </>
   );

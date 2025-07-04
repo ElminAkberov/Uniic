@@ -87,7 +87,9 @@
   "messagePlaceholder": "Insert your message here",
   "sendButton": "Send",
   "privacyPolicy": "Privacy Policy",
+  "termsAndConditions": "Terms and Conditions",
   "privacyPolicyBr": "Privacy <br /> Policy",
+  "termsAndConditionsBr": "Terms and <br /> Conditions",
   "invalidEmail": "Invalid email address",
   "emailRequired": "Email is required",
   "messageRequired": "Message is required",
@@ -95,112 +97,191 @@
   "loading": "Sending...",
   "thanksForContact": "Thank you for contacting us!",
   "errorContact": "An error occurred, please try again.",
-  "ptitle": "Terms and Conditions for Uniic App",
-  "date": "Effective Date: 18th January 2025 | Last Updated: 22nd January 2025",
-  "intro": "Welcome to Uniic (\"the App\"), a global social connections and personal development platform currently in beta development, designed to connect users through meaningful interactions and tools for growth. By accessing or using the App, you agree to these Terms and Conditions (\"Terms\"). If you do not agree to these Terms, you must discontinue use of the App immediately.",
+
+  "ptitle": "Uniic Privacy Policy",
+  "date": "Effective Date: July 1st, 2025. Last Updated: July 1st, 2025",
+  "intro": "This Privacy Policy explains how Woooz Inc. (“Woooz,” “we,” “our,” or “us”) collects, uses, discloses, and protects your information when you use the Uniic mobile application and related services (collectively, the “App”). By using Uniic, you agree to the terms of this Privacy Policy. If you do not agree, please do not use the App.",
   "sections": {
     "acceptance": {
-      "title": "1. Acceptance of Terms",
-      "points": [
-        "You are at least 18 years old or the legal age of majority in your jurisdiction.",
-        "You have read, understood, and agreed to these Terms.",
-        "You will comply with all applicable laws and regulations in your region."
-      ]
+      "title": "1. Eligibility",
+      "points": "Uniic is intended for users <b>18 years of age or older.</b> We do not knowingly collect personal information from anyone under 18. If we become aware that a user is under 18, we will take steps to delete their information."
     },
     "privacy": {
-      "title": "2. Data Collection and Privacy",
+      "title": "2. Information We Collect",
       "collect": {
-        "title": "2.1 Data We Collect",
+        "info": "We collect the following types of information:",
+        "title": "a. Information You Provide to Us",
         "items": [
-          "Personal Information: Name, email address, phone number, age, gender, and other profile details.",
-          "Beta Testing Feedback: Crash logs, error reports, and user feedback.",
-          "Usage Data: Interactions with the App, questionnaire responses, navigation history."
+          "<b>Account Information:</b> Email address, username, password, and optional profile photo.",
+          "<b>User Content:</b> Posts, messages, images, videos, and any content you share or upload.",
+          "<b>Support Requests:</b> Information you provide when contacting customer support."
         ]
       },
       "usage": {
-        "title": "2.2 How We Use Your Data",
+        "title": "b. Information We Collect Automatically",
         "items": [
-          "To notify you about App updates and improvements.",
-          "To collect feedback and improve the App during beta.",
-          "To send you marketing or informational content where permitted."
+          "<b>Device Data:</b> IP address, device ID, operating system, browser type, and language.",
+          "<b>Usage Data:</b> App interactions, content views, features used, crash logs, and diagnostics.",
+          "<b>Location Data:</b> General geographic location based on your IP (no GPS tracking)."
         ]
       },
       "sharing": {
-        "title": "2.3 Data Sharing",
+        "title": "c. Cookies and Tracking Technologies",
         "items": [
-          "Shared with trusted third parties under confidentiality.",
-          "Not sold to third parties.",
-          "May be disclosed if required by law or legal processes."
-        ]
-      },
-      "rights": {
-        "title": "2.4 Your Rights",
-        "items": [
-          "You have the right to access, correct, or delete your data.",
-          "Unsubscribe or request deletion via contact@uniic.app."
+          "We use cookies and similar technologies to enable features, analyze usage, and personalize content. You may control cookie settings via your browser."
         ]
       }
     },
-    "beta": {
-      "title": "3. Beta Testing",
-      "ios": {
-        "title": "3.1 iOS TestFlight",
-        "desc": "Available via Apple TestFlight. You agree to Apple’s terms and conditions."
-      },
-      "android": {
-        "title": "3.2 Android Beta Testing",
-        "desc": "Available on Android. You agree to applicable beta terms."
-      },
-      "limitations": {
-        "title": "3.3 Beta Testing Limitations",
-        "items": [
-          "Beta version is provided \"AS IS\".",
-          "No liability for bugs or issues.",
-          "Feedback is appreciated but not compensated."
-        ]
-      }
-    },
-    "email": {
-      "title": "4. Email and Phone Number Use",
+    "rights": {
+      "title": "3. How We Use Your Information",
       "items": [
-        "We may contact you for updates or marketing.",
-        "You can opt out of non-essential messages.",
-        "Your data is stored securely."
+        "Operate, maintain, and improve the Uniic App.",
+        "Personalize content and recommendations.",
+        "Communicate with you (e.g., support, notifications).",
+        "Prevent fraud, abuse, and policy violations.",
+        "Comply with legal obligations."
       ]
     },
-    "global": {
-      "title": "5. Global Applicability",
-      "desc": "These Terms aim to comply with global data protection standards, including user rights and data transparency."
-    },
-    "liability": {
-      "title": "6. Liability Disclaimer",
+    "sharing": {
+      "title": "4. Sharing of Information",
+      "desc": "We do not sell your personal information. We may share it only with:",
       "items": [
-        "App is provided \"AS IS\" without warranties.",
-        "Uniic is not liable for beta-related damages.",
-        "Liability limited to any amount you paid (if any)."
+        "<b>Service Providers:</b> Cloud hosting, analytics, email delivery, content moderation.",
+        "<b>Legal Authorities:</b> When required to comply with legal obligations or enforce our rights.",
+        "<b>Business Transfers:</b> If Woooz Inc. is involved in a merger, acquisition, or sale of assets."
       ]
     },
-    "ip": {
-      "title": "7. Intellectual Property",
+    "userRights": {
+      "title": "5. Your Rights and Choices",
       "items": [
-        "All content and trademarks belong to Uniic or licensors.",
-        "No copying or distribution without permission."
+        "<b>Access:</b> Request a copy of your data.",
+        "<b>Correct:</b> Update inaccurate or incomplete data.",
+        "<b>Delete:</b> Request deletion of your account and data.",
+        "<b>Restrict or Object:</b> Limit how we use your information.",
+        "<b>Port:</b> Receive your data in a structured, machine-readable format.",
+        "To exercise any of these rights, email us at <b><a href='mailto:privacy@uniic.app'>privacy@uniic.app.</a></b>"
+      ]
+    },
+    "dataRetention": {
+      "title": "6. Data Retention",
+      "points": "We retain your information for as long as necessary to provide the App and comply with legal requirements. Upon request, we will delete your data unless retention is required by law."
+    },
+    "security": {
+      "title": "7. Security",
+      "points": "We implement technical and organizational safeguards to protect your information, including encryption, access controls, and regular audits. However, no method of transmission or storage is 100% secure."
+    },
+    "international": {
+      "title": "8. International Transfers",
+      "points": "If you are located outside the United States, please be aware that your data may be processed and stored in the U.S. By using Uniic, you consent to the transfer of your data to the U.S. and other jurisdictions as necessary."
+    },
+    "thirdParty": {
+      "title": "9. Third-Party Services",
+      "points": "Uniic may contain links to third-party services. We are not responsible for the privacy practices of those services. Please review their privacy policies independently."
+    },
+    "policyChanges": {
+      "title": "10. Changes to This Privacy Policy",
+      "points": "We may update this policy from time to time. If we make material changes, we will notify you via in-app notice or email. Your continued use of Uniic after changes are posted constitutes your acceptance."
+    },
+    "contact": {
+      "title": "11. Contact Us",
+      "items": [
+        "For questions, concerns, or requests regarding this Privacy Policy, please contact us at:",
+        "📧 <b><a href='mailto:privacy@uniic.app'>privacy@uniic.app.</a></b>",
+        "🏢 Woooz Inc.",
+        "2155 Pantages Circle, Rancho Cordova, CA, 95670"
+      ]
+    }
+  },
+  "ttitle": "Uniic Terms & Conditions",
+  "tdate": "Effective Date: July 1st, 2025. Last Updated: July 1st, 2025",
+  "tintro": "Welcome to Uniic! These Terms and Conditions (“Terms”) govern your access to and use of the Uniic app (“App”), including any content, features, and services made available by Woooz, Inc. (“we”, “us”, or “our”). By using Uniic, you agree to be bound by these Terms. If you do not agree, please do not use the app.",
+  "tsections": {
+    "eligibility": {
+      "title": "1. Eligibility",
+      "points": "You must be at least 18 years old to use Uniic."
+    },
+    "userAccounts": {
+      "title": "2. User Accounts",
+      "items": [
+        "You are responsible for maintaining the confidentiality of your login credentials.",
+        "You agree to provide accurate and complete information.",
+        "You may not impersonate another person or use a false identity."
+      ]
+    },
+    "ugcPolicy": {
+      "title": "3. User-Generated Content (UGC) Policy",
+      "description": "Uniic enables users to create, post, and share content. By submitting content, you grant Uniic a non-exclusive, worldwide, royalty-free license to use, store, display, reproduce, and distribute your content within the app.",
+      "prohibitionsTitle": "You agree not to upload, post, or share content that:",
+      "prohibitions": [
+        "Contains hate speech, harassment, or abusive behavior",
+        "Promotes or depicts violence, self-harm, or sexually explicit material",
+        "Violates any applicable laws or regulations",
+        "Infringes on intellectual property rights",
+        "Contains misleading, fraudulent, or harmful information"
+      ],
+      "zeroTolerance": "Zero Tolerance: Uniic has a strict zero-tolerance policy for objectionable content and abusive users."
+    },
+    "contentModeration": {
+      "title": "4. Content Moderation & Reporting",
+      "items": [
+        "To keep the community safe:",
+        "We use automated filters and human moderators to detect and remove objectionable content.",
+        "Users can flag inappropriate content or report abusive behavior directly in the app.",
+        "Users may block or mute others to avoid unwanted interactions.",
+        "We review all reports within 24 hours and take appropriate action, including content removal or user suspension/ban.",
+        "Uniic reserves the right to remove content or terminate accounts at our sole discretion, without notice, if you violate these terms."
+      ]
+    },
+    "privacyPolicyRef": {
+      "title": "5. Privacy Policy",
+      "points": [
+        "We care about your privacy. Please read our Privacy Policy to understand how we collect, use, and protect your personal information. Key principles:",
+        "We collect minimal data necessary to operate the app (e.g., email, device info, app usage).",
+        "We do not sell your personal data to third parties.",
+        "You can request access to, correction of, or deletion of your personal data at any time.",
+        "Data is securely stored and encrypted.",
+        "We comply with applicable privacy laws, including GDPR and CCPA."
+      ]
+    },
+    "intellectualProperty": {
+      "title": "6. Intellectual Property",
+      "points": [
+        "All app content (excluding user submissions) including logos, trademarks, text, graphics, and software are the property of Uniic or its licensors.",
+        "You may not copy, modify, or distribute content from the app without permission."
+      ]
+    },
+    "prohibitedConduct": {
+      "title": "7. Prohibited Conduct",
+      "items": [
+        "You agree not to:",
+        "Use the app for any unlawful or harmful purpose",
+        "Interfere with the app’s operation, servers, or networks",
+        "Upload viruses, malware, or malicious code",
+        "Attempt to gain unauthorized access to other user accounts or our backend systems"
       ]
     },
     "termination": {
-      "title": "8. Termination of Access",
-      "items": [
-        "Access may be terminated for violations.",
-        "You may leave beta by uninstalling the App."
-      ]
+      "title": "8. Termination",
+      "points": "We reserve the right to suspend or terminate your access to the app at any time, with or without cause, especially in cases of policy violations, abuse, or threats to platform integrity."
     },
-    "amendments": {
-      "title": "9. Amendments to Terms",
-      "desc": "Terms may be updated at any time. Updates will be communicated through email or the App. Continued use signifies acceptance."
+    "disclaimers": {
+      "title": "9. Disclaimers",
+      "points": "Uniic is provided \"as is\" without warranties of any kind. We do not guarantee uninterrupted service or that the app will be error-free. Use at your own risk."
+    },
+    "limitationOfLiability": {
+      "title": "10. Limitation of Liability",
+      "points": "To the maximum extent permitted by law, Uniic is not liable for any indirect, incidental, or consequential damages resulting from your use of the app or any user-generated content therein."
+    },
+    "changesToTerms": {
+      "title": "11. Changes to Terms",
+      "points": "We may update these Terms from time to time. If we make significant changes, we will notify you through the app or by email. Continued use of the app after changes means you accept the updated Terms."
     },
     "contact": {
-      "title": "10. Contact Information",
-      "desc": "For questions or concerns, contact: support@uniic.app"
+      "title": "12. Contact Us",
+      "items": [
+        "For questions, concerns, or abuse reports, contact us at:",
+        "📧 <b><a href='mailto:support@uniic.app'>support@uniic.app</a></b>"
+      ]
     }
   }
 }

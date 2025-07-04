@@ -4,75 +4,36 @@ import ios from "../../assets/Apple Download Button.svg";
 import parse from "html-react-parser";
 import { Trans, useTranslation } from "react-i18next";
 import { handleRedirect } from "../../utils/appRedirect";
-const Privacy = () => {
+const Terms = () => {
   const { t } = useTranslation();
   return (
     <div className="sofia-pro relative max-lg:mb-20">
       <h1 className="text-[#141415] pl-[112px] max-lg:pl-[64px] pt-[80px] max-md:pt-[61px] max-md:pl-[28px] leading-[64px] text-[64px] max-md:text-[44px] max-md:leading-[44px] mb-[30px]">
-        <Trans i18nKey={"privacyPolicyBr"} />
+        <Trans i18nKey={"termsAndConditionsBr"} />
       </h1>
       <div className="text-[#6C6C6C] pl-[112px] max-lg:pl-[64px] text-[32px] max-lg:text-[24px] max-md:pl-[28px] pr-2">
-        <div className="mx-auto rounded-lg mt-10 md:pr-20">
-          <h1 className="text-xl font-bold mb-2">{t("ptitle")}</h1>
-          <p className="text-sm text-gray-500 mb-6">{t("date")}</p>
+        <div className="mx-auto rounded-lg mt-10 md:pr-20 ">
+          <h1 className="text-xl font-bold mb-2">{t("ttitle")}</h1>
+          <p className="text-sm text-gray-500 mb-6">{t("tdate")}</p>
 
-          <p className="mb-4 text-[16px]">{t("intro")}</p>
+          <p className="mb-4 text-[16px]">{t("tintro")}</p>
 
           <div className="space-y-6 text-[16px]">
             <section>
               <h2 className="text-2xl font-semibold mb-2">
-                {t("sections.acceptance.title")}
+                {t("tsections.eligibility.title")}
               </h2>
-              <ul className="list-disc pl-5 space-y-2">
-                <li>
-                  <Trans
-                    i18nKey="sections.acceptance.points"
-                    components={{ b: <b className="font-extrabold" /> }}
-                  />
-                </li>
-              </ul>
+              <p>{t("tsections.eligibility.points")}</p>
             </section>
 
             <hr />
 
             <section>
               <h2 className="text-2xl font-semibold mb-2">
-                {t("sections.privacy.title")}
-              </h2>
-              <p className="mb-2">{t("sections.privacy.collect.info")}</p>
-
-              {["collect", "usage", "sharing"].map((key) => (
-                <div key={key}>
-                  <h3 className="text-lg font-semibold mb-2">
-                    {t(`sections.privacy.${key}.title`)}
-                  </h3>
-                  <ul className="list-disc pl-5 mb-4">
-                    {t(`sections.privacy.${key}.items`, {
-                      returnObjects: true,
-                    }).map((item, idx) => (
-                      <li key={idx}>
-                        <Trans
-                          i18nKey={`sections.privacy.${key}.items.${idx}`}
-                          components={{
-                            b: <b className="font-bold" />,
-                            a: <a className="text-blue-500" />,
-                          }}
-                        />
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </section>
-
-            <hr />
-
-            <section>
-              <h2 className="text-2xl font-semibold mb-2">
-                {t("sections.rights.title")}
+                {t("tsections.userAccounts.title")}
               </h2>
               <ul className="list-disc pl-5 space-y-2">
-                {t("sections.rights.items", { returnObjects: true }).map(
+                {t("tsections.userAccounts.items", { returnObjects: true }).map(
                   (item, i) => (
                     <li key={i}>{item}</li>
                   )
@@ -84,20 +45,38 @@ const Privacy = () => {
 
             <section>
               <h2 className="text-2xl font-semibold mb-2">
-                {t("sections.sharing.title")}
+                {t("tsections.ugcPolicy.title")}
               </h2>
-              <p className="mb-2">{t("sections.sharing.desc")}</p>
+              <p className="mb-2">{t("tsections.ugcPolicy.description")}</p>
+
+              <h3 className="text-lg font-semibold mb-2">
+                {t("tsections.ugcPolicy.prohibitionsTitle")}
+              </h3>
+              <ul className="list-disc pl-5 space-y-2 mb-2">
+                {t("tsections.ugcPolicy.prohibitions", {
+                  returnObjects: true,
+                }).map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+
+              <p className="font-bold">
+                {t("tsections.ugcPolicy.zeroTolerance")}
+              </p>
+            </section>
+
+            <hr />
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-2">
+                {t("tsections.contentModeration.title")}
+              </h2>
               <ul className="list-disc pl-5 space-y-2">
-                {t("sections.sharing.items", { returnObjects: true }).map(
-                  (item, i) => (
-                    <li key={i}>
-                      <Trans
-                        i18nKey={`sections.sharing.items.${i}`}
-                        components={{ b: <b className="font-bold" /> }}
-                      />
-                    </li>
-                  )
-                )}
+                {t("tsections.contentModeration.items", {
+                  returnObjects: true,
+                }).map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
               </ul>
             </section>
 
@@ -105,14 +84,14 @@ const Privacy = () => {
 
             <section>
               <h2 className="text-2xl font-semibold mb-2">
-                {t("sections.userRights.title")}
+                {t("tsections.privacyPolicyRef.title")}
               </h2>
               <ul className="list-disc pl-5 space-y-2">
-                {t("sections.userRights.items", { returnObjects: true }).map(
-                  (item, i) => (
-                    <li key={i}>{parse(item)}</li>
-                  )
-                )}
+                {t("tsections.privacyPolicyRef.points", {
+                  returnObjects: true,
+                }).map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
               </ul>
             </section>
 
@@ -120,55 +99,75 @@ const Privacy = () => {
 
             <section>
               <h2 className="text-2xl font-semibold mb-2">
-                {t("sections.dataRetention.title")}
-              </h2>
-              <p>{t("sections.dataRetention.points")}</p>
-            </section>
-
-            <hr />
-
-            <section>
-              <h2 className="text-2xl font-semibold mb-2">
-                {t("sections.security.title")}
-              </h2>
-              <p>{t("sections.security.points")}</p>
-            </section>
-
-            <hr />
-
-            <section>
-              <h2 className="text-2xl font-semibold mb-2">
-                {t("sections.international.title")}
-              </h2>
-              <p>{t("sections.international.points")}</p>
-            </section>
-
-            <hr />
-
-            <section>
-              <h2 className="text-2xl font-semibold mb-2">
-                {t("sections.thirdParty.title")}
-              </h2>
-              <p>{t("sections.thirdParty.points")}</p>
-            </section>
-
-            <hr />
-
-            <section>
-              <h2 className="text-2xl font-semibold mb-2">
-                {t("sections.policyChanges.title")}
-              </h2>
-              <p>{t("sections.policyChanges.points")}</p>
-            </section>
-
-            <hr />
-
-            <section>
-              <h2 className="text-2xl font-semibold mb-2">
-                {t("sections.contact.title")}
+                {t("tsections.intellectualProperty.title")}
               </h2>
               <ul className="list-disc pl-5 space-y-2">
-                {t("sections.contact.items", { returnObjects: true }).map(
+                {t("tsections.intellectualProperty.points", {
+                  returnObjects: true,
+                }).map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            </section>
+
+            <hr />
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-2">
+                {t("tsections.prohibitedConduct.title")}
+              </h2>
+              <ul className="list-disc pl-5 space-y-2">
+                {t("tsections.prohibitedConduct.items", {
+                  returnObjects: true,
+                }).map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            </section>
+
+            <hr />
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-2">
+                {t("tsections.termination.title")}
+              </h2>
+              <p>{t("tsections.termination.points")}</p>
+            </section>
+
+            <hr />
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-2">
+                {t("tsections.disclaimers.title")}
+              </h2>
+              <p>{t("tsections.disclaimers.points")}</p>
+            </section>
+
+            <hr />
+            <section>
+              <h2 className="text-2xl font-semibold mb-2">
+                {t("tsections.limitationOfLiability.title")}
+              </h2>
+              <p>{t("tsections.limitationOfLiability.points")}</p>
+            </section>
+
+            <hr />
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-2">
+                {t("tsections.changesToTerms.title")}
+              </h2>
+              <p>{t("tsections.changesToTerms.points")}</p>
+            </section>
+
+            <hr />
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-2">
+                {t("tsections.contact.title")}
+              </h2>
+              <ul className="list-disc pl-5 space-y-2">
+                {t("tsections.contact.items", { returnObjects: true }).map(
                   (item, i) => (
                     <li key={i}>{parse(item)}</li>
                   )
@@ -197,4 +196,4 @@ const Privacy = () => {
   );
 };
 
-export default Privacy;
+export default Terms;
