@@ -97,7 +97,6 @@
   "loading": "Sending...",
   "thanksForContact": "Thank you for contacting us!",
   "errorContact": "An error occurred, please try again.",
-
   "ptitle": "Uniic Privacy Policy",
   "date": "Effective Date: July 1st, 2025. Last Updated: July 1st, 2025",
   "intro": "This Privacy Policy explains how Woooz Inc. (“Woooz,” “we,” “our,” or “us”) collects, uses, discloses, and protects your information when you use the Uniic mobile application and related services (collectively, the “App”). By using Uniic, you agree to the terms of this Privacy Policy. If you do not agree, please do not use the App.",
@@ -153,6 +152,7 @@
     },
     "userRights": {
       "title": "5. Your Rights and Choices",
+      "desc": "Depending on your location, you may have the right to:",
       "items": [
         "<b>Access:</b> Request a copy of your data.",
         "<b>Correct:</b> Update inaccurate or incomplete data.",

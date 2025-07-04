@@ -17,10 +17,10 @@ const Terms = () => {
           <p className="text-sm text-gray-500 mb-6">{t("tdate")}</p>
 
           <p className="mb-4 text-[16px]">{t("tintro")}</p>
-
+<hr />
           <div className="space-y-6 text-[16px]">
             <section>
-              <h2 className="text-2xl font-semibold mb-2">
+              <h2 className="text-2xl font-semibold mb-2 mt-5">
                 {t("tsections.eligibility.title")}
               </h2>
               <p>{t("tsections.eligibility.points")}</p>

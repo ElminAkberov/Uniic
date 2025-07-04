@@ -152,6 +152,7 @@
     },
     "userRights": {
       "title": "5. Seus Direitos e Escolhas",
+      "desc": "Dependendo da sua localização, você pode ter o direito de:",
       "items": [
         "<b>Acessar:</b> Solicitar uma cópia dos seus dados.",
         "<b>Corrigir:</b> Atualizar dados imprecisos ou incompletos.",

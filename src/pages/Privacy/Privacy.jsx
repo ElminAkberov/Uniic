@@ -17,10 +17,10 @@ const Privacy = () => {
           <p className="text-sm text-gray-500 mb-6">{t("date")}</p>
 
           <p className="mb-4 text-[16px]">{t("intro")}</p>
-
+          <hr />
           <div className="space-y-6 text-[16px]">
             <section>
-              <h2 className="text-2xl font-semibold mb-2">
+              <h2 className="text-2xl font-semibold mb-2 mt-5">
                 {t("sections.acceptance.title")}
               </h2>
               <ul className="list-disc pl-5 space-y-2">
@@ -107,6 +107,7 @@ const Privacy = () => {
               <h2 className="text-2xl font-semibold mb-2">
                 {t("sections.userRights.title")}
               </h2>
+              <p className="mb-2">{t("sections.userRights.desc")}</p>
               <ul className="list-disc pl-5 space-y-2">
                 {t("sections.userRights.items", { returnObjects: true }).map(
                   (item, i) => (
