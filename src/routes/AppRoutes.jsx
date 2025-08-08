@@ -5,6 +5,7 @@ import Home from "../pages/Home/Home";
 import Privacy from "../pages/Privacy/Privacy";
 import { Navigate } from "react-router-dom";
 import Terms from "../pages/Terms/Terms";
+import DeeplinkRedirect from "../pages/DeepLink/DeepLink";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/terms-and-conditions",
         element: <Terms />,
+      },
+      {
+        path: "/deeplink/:type/:uuid?",
+        element: <DeeplinkRedirect />,
       },
       {
         path: "*",

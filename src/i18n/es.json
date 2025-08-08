@@ -283,5 +283,7 @@
         "📧 <b><a href='mailto:support@uniic.app'>support@uniic.app</a></b>"
       ]
     }
-  }
+  },
+  "redirecting": "Redirigiendo...",
+  "redirectinginfo": "Si la aplicación no se abre, por favor espera o haz clic aquí."
 }
