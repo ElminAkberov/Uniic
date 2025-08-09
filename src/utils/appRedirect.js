@@ -1,6 +1,6 @@
 export const handleRedirect = (os) => {
   const iosAppLink = "https://apps.apple.com/";
-  const androidAppLink = "https://play.google.com/store/apps/";
+  const androidAppLink = "https://play.google.com/store/apps/details?id=com.uniic";
 
   if (os === "android") {
     window.location.href = androidAppLink;
