@@ -1,5 +1,5 @@
 export const handleRedirect = (os) => {
-  const iosAppLink = "https://apps.apple.com/";
+  const iosAppLink = "https://apps.apple.com/us/app/uniic/id6742906894";
   const androidAppLink = "https://play.google.com/store/apps/details?id=com.uniic";
 
   if (os === "android") {

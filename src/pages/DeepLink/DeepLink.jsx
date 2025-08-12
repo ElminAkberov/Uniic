@@ -23,7 +23,7 @@ const DeeplinkRedirect = () => {
       appDeeplink += `${type}`;
     }
 
-    const iosStoreLink = "https://apps.apple.com/app/uniic";
+    const iosStoreLink = "https://apps.apple.com/us/app/uniic/id6742906894";
     const androidStoreLink = `intent://profile/${id}#Intent;scheme=uniic;package=com.uniic;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.uniic;end`;
 
     const fallbackLink = isIOS ? iosStoreLink : androidStoreLink;
