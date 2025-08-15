@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 const AppRedirect = () => {
   const { t } = useTranslation();
   return (
-    <div className="h-[15dvh] w-full my-24 max-md:my-5 max-md:mb-24 sofia-pro">
+    <div className="h-[15dvh] w-full my-24 max-md:my-5 max-md:mb-24 sofia-pro px-2">
       <h1 className="text-center text-2xl md:text-3xl my-10">
         {t("appRedirect")}
       </h1>
