@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import android from "../../assets/Android Download Button.svg";
 import ios from "../../assets/Apple Download Button.svg";
 import mask1 from "../../assets/mask1.png";

@@ -39,7 +39,7 @@
     ],
     "categories": [
       {
-        "title": "Dating",
+        "title": "Romance",
         "desc": "So your next relationship doesn’t feel like an ongoing attachment experiment"
       },
       {
@@ -285,5 +285,6 @@
     }
   },
   "redirecting": "Redirecting...",
-  "redirectinginfo": "If the app doesn't open, please wait or click here."
+  "redirectinginfo": "If the app doesn't open, please wait or click here.",
+  "appRedirect": "Get the Uniic App Now – Available for Android and iOS"
 }

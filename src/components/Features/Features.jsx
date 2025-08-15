@@ -1,4 +1,3 @@
-import React from "react";
 import { useTranslation, Trans } from "react-i18next";
 import android from "../../assets/Android Download Button.svg";
 import ios from "../../assets/Apple Download Button.svg";

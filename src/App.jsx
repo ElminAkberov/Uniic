@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Layout from "./layouts/Layout";
 import { useLenis } from "./utils/useLenis";
 import { useLocation } from "react-router-dom";

@@ -13,7 +13,7 @@ export const handleRedirect = (os) => {
     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
       window.location.href = iosAppLink;
     } else {
-      window.location.href = androidAppLink;
+      window.location.href = "/app";
     }
   }
 };

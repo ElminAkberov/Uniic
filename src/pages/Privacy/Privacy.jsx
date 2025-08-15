@@ -1,4 +1,3 @@
-import React from "react";
 import android from "../../assets/Android Download Button.svg";
 import ios from "../../assets/Apple Download Button.svg";
 import parse from "html-react-parser";

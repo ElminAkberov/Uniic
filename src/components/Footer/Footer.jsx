@@ -68,10 +68,7 @@ const Footer = () => {
   }
   return (
     <>
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        className="flex justify-center max-lg:items-center max-[1024px]:flex-col md:justify-between mx-[114px]  max-md:mx-[22px] mt-[110px]"
-      >
+      <div className="flex justify-center gap-x-[34px] max-lg:items-center max-[1024px]:flex-col md:justify-between mx-[114px]  max-md:mx-[22px] mt-[110px]">
         <div
           className={`flex flex-col max-lg:mb-10 ${
             (pathname == "/privacy-policy" ||
@@ -92,7 +89,11 @@ const Footer = () => {
             text={t("buttonText")}
           />
         </div>
-        <div className="bg-[#F2F2F2] rounded-[14px]  max-w-[480px] w-full px-[25px] max-md:!mx-[22px] py-[34px] ">
+
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="bg-[#F2F2F2] rounded-[14px]  max-w-[480px] w-full px-[25px] max-md:!mx-[22px] py-[34px] "
+        >
           <h3 className="sofia-light text-[22px] mb-[33px]">
             <b className="sofia-bold">{t("questionBold")}</b> {t("question")}
           </h3>
@@ -155,8 +156,8 @@ const Footer = () => {
               {isLoading ? t("loading") : t("sendButton")}
             </button>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
 
       <div
         ref={dropdownRef}

@@ -1,4 +1,3 @@
-import React from "react";
 import { handleRedirect } from "../../utils/appRedirect";
 
 const Button = ({ className, type, text, disabled }) => {

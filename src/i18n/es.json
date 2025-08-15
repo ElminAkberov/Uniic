@@ -39,7 +39,7 @@
     ],
     "categories": [
       {
-        "title": "Citas",
+        "title": "Romance",
         "desc": "Para que tu próxima relación no se sienta como un experimento de apego continuo"
       },
       {
@@ -285,5 +285,6 @@
     }
   },
   "redirecting": "Redirigiendo...",
-  "redirectinginfo": "Si la aplicación no se abre, por favor espera o haz clic aquí."
+  "redirectinginfo": "Si la aplicación no se abre, por favor espera o haz clic aquí.",
+  "appRedirect": "Descarga la App Uniic ahora – Disponible para Android e iOS"
 }

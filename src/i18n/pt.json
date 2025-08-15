@@ -39,7 +39,7 @@
     ],
     "categories": [
       {
-        "title": "Namoro",
+        "title": "Romance",
         "desc": "Para que seu próximo relacionamento não pareça um experimento de apego contínuo"
       },
       {
@@ -285,5 +285,6 @@
     }
   },
   "redirecting": "Redirecionando...",
-  "redirectinginfo": "Se o aplicativo não abrir, por favor aguarde ou clique aqui."
+  "redirectinginfo": "Se o aplicativo não abrir, por favor aguarde ou clique aqui.",
+  "appRedirect":"Baixe o App Uniic agora – Disponível para Android e iOS"
 }
